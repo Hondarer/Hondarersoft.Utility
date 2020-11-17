@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Hondarersoft.Utility
 {
+    /// <summary>
+    /// <see cref="Task"/> の拡張メソッドを提供します。
+    /// </summary>
     public static class TaskExtensions
     {
+        /// <summary>
+        /// 待ち合せない <see cref="Task"/> で発生した例外の通知イベントを保持します。
+        /// </summary>
         public static event EventHandler<NoWaitTaskExceptionEventArgs> NoWaitTaskException;
 
         /// <summary>
